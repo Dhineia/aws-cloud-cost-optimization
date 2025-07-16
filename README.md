@@ -1,6 +1,6 @@
 # AWS CLOUD COST OPTIMIZATION - IDENTIFYING STALE RESOURCES
 
-1. Launch EC2 Instance
+# 1. Launch EC2 Instance
 
 - Go to the EC2 Dashboard
 
@@ -10,8 +10,9 @@
 
   <img width="1871" height="602" alt="Create ec2" src="https://github.com/user-attachments/assets/a5b0fddd-ba3a-45b0-9740-fb46d1139be6" />
   <img width="1901" height="748" alt="volume" src="https://github.com/user-attachments/assets/7c78fcfd-a586-4f45-b302-41e13cda4138" />
+---
 
-2. Create an EBS Snapshot
+# 2. Create an EBS Snapshot
 
 - Navigate to Snapshots
 
@@ -25,8 +26,8 @@
 
 <img width="1902" height="646" alt="create snapshot" src="https://github.com/user-attachments/assets/4c4ba784-b9f8-41ab-99ce-c17a7496c584" />
 
-
-3. Create a Lambda Function
+---
+# 3. Create a Lambda Function
 
 - Go to the Lambda Console
 
@@ -36,8 +37,9 @@
 
 <img width="1895" height="660" alt="create lambda" src="https://github.com/user-attachments/assets/5d9c5525-68b1-46d5-b106-fc8ff1923ce6" />
 
+---
 
-4. Add Your Code
+# 4. Add Your Code
 
 - Visit GitHub and copy the function code
 
@@ -49,24 +51,29 @@
 
 <img width="1893" height="712" alt="deploy and test" src="https://github.com/user-attachments/assets/a28b8253-f888-4a6d-a0e3-c21bf88b210c" />
 
+---
 
-5. Test the Function
+# 5. Test the Function
 
 - Click "Test", name the event test, and click "Test" again
 
 - The test will fail due to missing permissions
   
+---
 
-6. Adjust Function Timeout
+# 6. Adjust Function Timeout
 
 - Go to Configuration tab
 
 - Click "General Configuration" > Edit
 
 - Increase timeout to 10 seconds and save
-  
 
-7. Attach IAM Policies
+<img width="1880" height="698" alt="create IAM roles" src="https://github.com/user-attachments/assets/fc7fd1a6-adab-4789-90c2-53fdd9a799cf" />
+
+---
+
+# 7. Attach IAM Policies
 
 - First Policy: Snapshot Permissions
 
@@ -106,8 +113,9 @@
 
 <img width="1882" height="673" alt="policies" src="https://github.com/user-attachments/assets/65ae1d3e-15e4-43ce-afe0-b9a5a9c8ce00" />
 
+---
 
-8. Retest the Function
+# 8. Retest the Function
 
 - Go back to Lambda and click "Test"
 
