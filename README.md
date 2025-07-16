@@ -1,1 +1,2 @@
-# aws-cloud-cost-optimization
+## AWS CLOUD COST OPTIMIZATION - IDENTIFYING STALE RESOURCES
+---
