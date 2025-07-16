@@ -1,5 +1,9 @@
 # AWS CLOUD COST OPTIMIZATION - IDENTIFYING STALE RESOURCES
 
+# Detecting and Cleaning Up Unused EBS Snapshots
+
+- This Lambda function is designed to help reduce AWS storage costs by locating and removing unused EBS snapshots. It scans all snapshots created under your AWS account and collects information about currently active EC2 instances—specifically those in either running or stopped states. For each snapshot, the function examines whether the linked EBS volume is still in use by any active instance. If it determines that the snapshot is no longer associated with an active workload, it safely deletes it as part of the cleanup process.
+
 # 1. Launch EC2 Instance
 
 - Go to the EC2 Dashboard
